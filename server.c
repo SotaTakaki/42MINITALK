@@ -6,14 +6,13 @@
 /*   By: stakaki <stakaki@student.42tokyo.j>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 17:42:15 by stakaki           #+#    #+#             */
-/*   Updated: 2021/07/16 22:12:37 by stakaki          ###   ########.fr       */
+/*   Updated: 2021/07/21 11:58:46 by stakaki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <sys/types.h>
 #include <signal.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 void	my_handler(int sigsum);
 void	put_pid(void);
 void	put_message(void);
