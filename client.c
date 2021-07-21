@@ -6,7 +6,7 @@
 /*   By: stakaki <stakaki@student.42tokyo.j>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 17:02:24 by stakaki           #+#    #+#             */
-/*   Updated: 2021/07/16 22:04:17 by stakaki          ###   ########.fr       */
+/*   Updated: 2021/07/21 11:34:33 by stakaki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <sys/types.h>
@@ -27,6 +27,8 @@ int	main(int argc, char *argv[])
 	pid = ft_atoi(argv[1]);
 	i = 0;
 	binary_num = NULL;
+	if (argc != 3)
+		return (1);
 	if (pid < 100 || pid > 99998)
 		kill(pid, 0);
 	while (argv[2][i] != '\0')
